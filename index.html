@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=PT+Mono&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Weather App</title>
+</head>
+<body>
+    <div class="weather-app">
+    <header>
+        <form class="search-form" id="search-form">
+        <input 
+        type="search" 
+        placeholder="Enter a city.." 
+        required
+        id="search-form-input" 
+        class="search-form-input"
+        />
+        <input type="submit" value ="Search" class="search-form-button"/>
+        </form>
+    </header>
+<main>
+    <div class="weather-app-data">
+        <div>
+            <h1 class="weather-app-city" id="city"></h1>
+            <p class="weather-app-details">
+                <span id="time"></span>,
+                <span id="description"></span>
+                <br />
+                Humidity: <strong id="humidity"></strong>, Wind:
+                <strong id="wind-speed"></strong>
+            </p>
+        </div>
+        <div class="weather-app-temperature-container">
+            <div id="icon"></div>
+            <div class="weather-app-temperature" id="temperature"></div>
+            <div class="weatehr-app-unit">°C</div>
+        </div>
+    </div>
+</main>
+
+    <footer> 
+        Coded by 
+        <a href="https://ireneytlee.my.canva.site/"> Irene Lee</a> 
+        ,and is open-sourced on <a href ="https://github.com/ireneytlee14/Week-7-SheCodes-Weather-Forecast/tree/main"> GitHub</a> 
+        and hosted on <a href="https://irene-shecodes-weatherapp.netlify.app/">Netlify</a></footer>
+    </div>
+    <script src="src/app.js"></script>
+    </body>
+</html>
+
